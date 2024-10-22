@@ -1,0 +1,199 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+*{
+    font-family: 'Hanken Grotesk';
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    display: flex;
+    width: 500px;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 2px 4px 6px hsl(224, 30%, 27%);
+    border-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.result{
+    flex-basis: 40%;
+    display: flex;
+    color:hsl(0, 0%, 100%);
+    flex-direction: column;
+    padding: 20px 20px 20px 20px;
+    background: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%)) ;
+    border-radius: 10px;
+}
+.result h2{
+    font-size: 20px;
+    text-align: center;
+}
+.seventy-six {
+    position: relative;
+    margin: auto;
+    width: 120px;
+    background: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    height: 120px;
+    border-radius: 50%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 20px;
+} 
+
+.seventy-six p {
+    font-size: 12px; 
+    margin: 0; 
+    text-align: center; /* Center the text */
+}
+.result span:last-child{
+    font-size: 10px;
+    letter-spacing: 1;
+    color:  hsl(0, 0%, 100%);
+    opacity: 80%;
+}
+.result span:not(:last-child){
+    font-size: 3em;
+    font-weight: 900;
+    color:  hsl(0, 0%, 100%);
+}
+.result .great{
+    text-align: center;
+    margin-top: 30px;
+}
+.great p:not(:last-child){
+    font-size: 22px;
+    letter-spacing: 1;
+    font-weight: 600;
+}
+.great p:last-child{
+    font-size: 13px;
+    opacity: 80%;
+}
+.summary{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    padding: 20px 30px 20px 20px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.summary h2{
+    color:  hsl(224, 30%, 27%);
+    font-size: 20px;
+    font-weight: 800;
+}
+.label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 5px 10px 5px;
+    margin-top: 10px;
+}
+.text{
+    display: flex;
+
+}
+.text img{
+    font-family: 600;
+    width: 12px;
+    padding-right: 5px;
+}
+.text p{
+    font-size: 13px;
+}
+.numbers{
+    font-size: 12px;
+    font-weight: 700;
+    color:  hsl(224, 30%, 27%);
+}
+.numbers span{
+    opacity: 70%;
+}
+.reaction .text{
+    color: hsl(0, 100%, 67%);
+}
+.memory .text{
+    color: hsl(39, 100%, 56%);
+}
+.verbal .text{
+    color: hsl(166, 100%, 37%);
+}
+.visual .text{
+    color: hsl(234, 85%, 45%);
+}
+.reaction {
+    background-color: hsla(0, 100%, 67%, 0.1); 
+}
+
+.memory {
+    background-color: hsla(39, 100%, 56%, 0.1); 
+}
+
+.verbal {
+    background-color: hsla(166, 100%, 37%, 0.1); 
+}
+
+.visual {
+    background-color: hsla(234, 85%, 45%, 0.1); 
+}
+button{
+    color: hsl(0, 0%, 100%);
+    border: 0;
+    background-color: hsl(224, 30%, 27%);
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 5px;
+    height: 40px;
+    width: 100%;
+}
+
+@media screen and (max-width:480px) {
+    .container{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        min-height: 100vh;
+        border-radius: unset;
+    }
+    .result{
+        border-top-left-radius: unset;
+        border-top-right-radius: unset;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+
+    }
+    
+    .result .great{
+        margin-top: 10px;
+    }
+    .great p:last-child{
+        padding-top: 10px;
+    }
+    .numbers{
+        font-size: 20px;
+    }
+    .text p {
+        font-size: 20px;
+    }
+    .label{
+        width: 100%;
+        height: 50px;
+    }
+    button{
+      
+        padding-top: 25px;
+        padding-bottom: 40px;border-radius: 70px;
+    }
+}
+
